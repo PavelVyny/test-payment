@@ -1,0 +1,31 @@
+{
+  "name": "test-payment",
+  "version": "1.0.0",
+  "description": "test payment page for KeyUA",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelVyny/test-payment.git"
+  },
+  "author": "Pavel Vynychenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelVyny/test-payment/issues"
+  },
+  "homepage": "https://github.com/PavelVyny/test-payment#readme"
+}
