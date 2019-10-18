@@ -8,45 +8,45 @@ const sourcemaps = require('gulp-sourcemaps');
 const less = require('gulp-less');
 
 const cssFiles = [
-    './src/less/main.less'
+	'./src/less/payments.less'
 ]
 const jsFiles = [
-    './src/js/lib.js',
-    './src/js/main.js'
+	'./src/js/lib.js',
+	'./src/js/main.js'
 ]
 
 function styles() {
-    return gulp.src(cssFiles)
-    .pipe(sourcemaps.init())
-    .pipe(less())
-    .pipe(concat('style.css'))
-    .pipe(autoprefixer({
-        cascade: false
-    }))
-    .pipe(cleanCSS({
-        level: 2
-    }))
+	return gulp.src(cssFiles)
+	.pipe(sourcemaps.init())
+	.pipe(less())
+	.pipe(concat('style.css'))
+	.pipe(autoprefixer({
+		cascade: false
+	}))
+	.pipe(cleanCSS({
+		level: 2
+	}))
 
 
-    .pipe(gulp.dest('./build/css'))
+	.pipe(gulp.dest('./build/css'))
 }
 
 function scripts() {
-    return gulp.src(jsFiles)
-    .pipe(concat('script.js'))
-    .pipe(uglify())
+	return gulp.src(jsFiles)
+	.pipe(concat('script.js'))
+	.pipe(uglify())
 
 
-    .pipe(gulp.dest('./build/js'))
+	.pipe(gulp.dest('./build/js'))
 }
 
 function clean() {
-    return del(['build/*'])
+	return del(['build/*'])
 }
 
 function watch() {
-    gulp.watch('./src/less/**/*.less', styles)
-    gulp.watch('./src/js/**/*.js', scripts)
+	gulp.watch('./src/less/**/*.less', styles)
+	gulp.watch('./src/js/**/*.js', scripts)
 }
 
 gulp.task('styles', styles);
