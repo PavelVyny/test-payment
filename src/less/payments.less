@@ -134,6 +134,54 @@ body {
 							outline: 0;
 						}
 					}
+					&.selected {
+						width: 532px;
+						height: 155px;
+						position: relative;
+						text-align: inherit;
+						padding-left: 125px;
+						.prop-limited-offer {
+							position: absolute;
+							width: 100%;
+							left: 0;
+							min-height: 41px;
+							.limited-offer-headline {
+								font-size: 1.6rem;
+								line-height: 41px;
+								padding-top: 0;
+								padding-left: 15px;
+							}
+						}
+						.prop-trial-img {
+							position: absolute;
+							left: 23px;
+							top: 44px;
+						}
+						.prop-trial {
+							margin-top: 60px;
+							font-size: 1.6rem;
+						}
+						.prop-price-description {
+							float: left;
+							color: #333;
+							margin-right: 15px;
+							margin-top: 5px;
+							font-size: .9rem;
+						}
+						.prop-price {
+							font-size: 1.6rem;
+							margin-top: 2px;
+						}
+						.prop-rebill {
+							margin: 0;
+							max-width: 190px;
+							font-size: 1rem;
+							opacity: .8;
+						}
+						.prop-to-purchase-but {
+							display: none;
+						}
+					}
 				}
 				.block-trial {
 					border: 2px solid #3D8F85;
@@ -189,7 +237,7 @@ body {
 							top: 50%;
 							transform: translate(-100%, -20%);
 							left: -18px;
-							background-image: url(/src/img/check-mark.svg);
+							background-image: url(/test-payment/src/img/check-mark.svg);
 							background-repeat: no-repeat;
 							display: block;
 							width: 10px;
@@ -203,6 +251,7 @@ body {
 	.slick-slider {
 		margin-top: 30px;
 		padding-left: 70px;
+		margin-bottom: 75px;
 		.slider-item {
 			display: flex;
 			&:focus {
@@ -231,6 +280,8 @@ body {
 			}
 		}
 		.slick-dots {
+			margin-left: -70px;
+			bottom: -45px;
 			li {
 				width: 10px;
 				margin: 0;
@@ -240,6 +291,42 @@ body {
 	footer {
 		.footer {
 			background-color: #2A1818;
+			.footer-top {
+				min-height: 95px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+				.top-row {
+					padding-top: 33px;
+					.row-logo {
+						.logo-img {
+							position: absolute;
+							margin-left: 85px;
+						}
+					}
+					.row-links {
+						display: flex;
+						max-width: 280px;
+						margin: auto;
+						justify-content: space-between;
+						font-family: 'Open Sans', sans-serif;
+						font-size: 1.5rem;
+						.links-link {
+							color: rgba(255, 255, 255, 0.8);
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			.footer-bottom {
+				min-height: 60px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.footer-bottom-text {
+					color: rgba(255, 255, 255, 0.4);
+					font-family: 'Open Sans', sans-serif;
+					font-size: 1.3rem;
+				}
+			}
 		}
 	}
 }
