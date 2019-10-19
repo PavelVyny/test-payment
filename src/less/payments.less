@@ -189,7 +189,7 @@ body {
 							top: 50%;
 							transform: translate(-100%, -20%);
 							left: -18px;
-							background-image: url(../img/check-mark.svg);
+							background-image: url(/src/img/check-mark.svg);
 							background-repeat: no-repeat;
 							display: block;
 							width: 10px;
@@ -205,6 +205,9 @@ body {
 		padding-left: 70px;
 		.slider-item {
 			display: flex;
+			&:focus {
+				outline: 0;
+			}
 			.slider-item-avatar {
 				object-fit: contain;
 				align-self: start;
