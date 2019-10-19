@@ -13,32 +13,230 @@ body {
 	overflow: hidden;
 	header {
 		.header {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 0 85px;
 			box-shadow: 0px 3px 20px #0000001A;
 			min-height: 85px;
-			.header-text {
-				color: #3D8F85;
-				border-bottom: 2px solid #3D8F85;
-				font-family: 'Montserrat', sans-serif;
-				font-size: 1.5rem;
-				height: fit-content;
+			position: fixed;
+			z-index: 10;
+			width: 1280px;
+			background: #fff;
+			.header-block {
+				display: flex;
+				align-items: center;
+				min-height: 85px;
+				.header-text {
+					position: absolute;
+    				right: 83px;
+					color: #3D8F85;
+					border-bottom: 2px solid #3D8F85;
+					font-family: 'Montserrat', sans-serif;
+					font-size: 1.5rem;
+					height: fit-content;
+				}
 			}
+		}
+		.header-logo {
+			position: absolute;
+			z-index: 11;
+			margin-left: 85px;
+			top: 30px;
 		}
 	}
 	.payments-main {
+		padding-top: 85px;
 		.main-headline {
 			color: #333;
-			font-family: 'Open Sans';
+			font-family: 'Open Sans', sans-serif;
 			font-weight: 700;
 			font-size: 2.6rem;
 			text-align: center;
 			max-width: 920px;
 			margin: auto;
 			margin-top: 40px;
-			
+		}
+		.block-offers {
+			display: flex;
+			margin-top: 35px;
+			padding-left: 85px;
+			.offers-set {
+				display: flex;
+				.set-block-prop {
+					border-radius: 7px;
+					min-width: 350px;
+					box-sizing: border-box;
+					text-align: center;
+					.prop-limited-offer {
+						min-height: 86px;
+						background-color: #3D8F85;
+						.limited-offer-headline {
+							color: #fff;
+							font-family: 'Open sans', sans-serif;
+							font-weight: 700;
+							font-size: 2.4rem;
+							padding-top: 6px;
+						}
+						.limited-offer-timer {
+
+						}
+					}
+					.prop-trial-img {
+						margin-top: 2px;
+					}
+					.prop-trial {
+						color: #646464;
+						font-family: 'Open sans', sans-serif;
+						font-weight: 700;
+						font-size: 1.8rem;
+						margin-top: 16px;
+					}
+					.prop-price-description {
+						color: #646464;
+						font-family: 'Open sans', sans-serif;
+						font-size: 11px;
+						margin-top: 10px;
+					}
+					.prop-price {
+						color: #3D8F85;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 3.2rem;
+						margin-top: 2px;
+						.price-period {
+							color: #646464;
+							font-family: 'Open sans', sans-serif;
+							font-size: 1.3rem;
+							margin-left: -7px;
+						}
+					}
+					.prop-rebill {
+						color: #585858;
+						font-family: 'Open sans', sans-serif;
+						font-size: 1.3rem;
+						max-width: 230px;
+						margin: auto;
+						margin-top: 13px;
+					}
+					.prop-to-purchase-but {
+						width: 260px;
+						min-height: 60px;
+						background-color: #E24C2C;
+						box-shadow: 0px 0px 20px #E24C2C87;
+						border: none;
+						padding: 0;
+						border-radius: 7px;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 1.5rem;
+						color: #fff;
+						margin-top: 33px;
+						margin-bottom: 28px;
+						&:hover {
+							cursor: pointer;
+						}
+						&:focus {
+							outline: 0;
+						}
+					}
+				}
+				.block-trial {
+					border: 2px solid #3D8F85;
+					margin-right: 28px;
+				}
+				.block-annual {
+					border: 1px solid #D4D9E6;
+					.prop-limited-offer {
+						background-color: transparent;
+					}
+					.prop-trial-img {
+						margin-top: 8px;
+					}
+					.prop-price {
+						margin-top: 27px;
+					}
+				}
+			}
+			.offers-features {
+				margin-left: 19px;
+				margin-top: 2px;
+				.promo-img-block {
+					position: relative;
+					.block-text {
+						color: #fff;
+						position: absolute;
+						top: 14px;
+						left: 72px;
+						font-family: 'Open sans', sans-serif;
+						font-weight: 600;
+						font-size: 1.8rem;
+					}
+				}
+				.promo-list {
+					padding-left: 26%;
+					.list-headline {
+						font-family: 'Open sans', sans-serif;
+						font-weight: 700;
+						font-size: 1.8rem;
+						color: #585858;
+						margin-top: 4px;
+						margin-bottom: 5px;
+					}
+					.list-item {
+						position: relative;
+						font-family: 'Open sans', sans-serif;
+						font-size: 1.6rem;
+						color: #333;
+						line-height: 4rem;
+						&:after {
+							content: "";
+							position: absolute;
+							top: 50%;
+							transform: translate(-100%, -20%);
+							left: -18px;
+							background-image: url(../img/check-mark.svg);
+							background-repeat: no-repeat;
+							display: block;
+							width: 10px;
+							height: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.slick-slider {
+		margin-top: 30px;
+		padding-left: 70px;
+		.slider-item {
+			display: flex;
+			.slider-item-avatar {
+				object-fit: contain;
+				align-self: start;
+				margin-top: -15px;
+			}
+			.slider-item-review {
+				.review-headline {
+					color: #333;
+					font-family: 'Open sans', sans-serif;
+					font-size: 1.8rem;
+					font-weight: 600;
+					margin-bottom: 10px;
+				}
+				.review-text {
+					color: #646464;
+					font-family: 'Open sans', sans-serif;
+					font-size: 1.5rem;
+					max-width: 450px;
+				}
+
+			}
+		}
+		.slick-dots {
+			li {
+				width: 10px;
+				margin: 0;
+			}
+		}
+	}
+	footer {
+		.footer {
+			background-color: #2A1818;
 		}
 	}
 }

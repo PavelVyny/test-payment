@@ -4,24 +4,31 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="build/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="build/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="build/slick/slick-theme.css"/>
+	<script src="build/js/jquery-3.4.1.min.js"></script>
+	<script src="build/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="build/css/style.css">
 	<title>Payment test</title>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
 			<div class="header">
-				<div class="header-logo">
-					<a href="#">
-						<picture>
-							<img src="src/img/logo-letter.svg" alt="Letter">
-						</picture>
-					</a>
+				<div class="header-block">
+					<div class="header-text">
+						Edit details in your cover letter
+					</div>
 				</div>
-				<div class="header-text">
-					Edit details in your cover letter
-				</div>
+				
+			</div>
+			<div class="header-logo">
+				<a href="#">
+					<picture>
+						<img src="build/img/logo-letter.svg" alt="Letter">
+					</picture>
+				</a>
 			</div>
 		</header>
 
@@ -30,10 +37,140 @@
 					Your profile is ready. Get your personalized cover letter
 					now for less than the price of a cup of coffee and improve your career.
 			</div>
+			<div class="block-offers">
+				<div class="offers-set">
+					<div class="set-block-prop block-trial">
+						<div class="prop-limited-offer">
+							<div class="limited-offer-headline">
+									LIMITED SUMMER OFFER
+							</div>
+							<div class="limited-offer-timer">
+							</div>
+						</div>
+						<img class="prop-trial-img" src="build/img/trial.svg" alt="trial">
+						<div class="prop-trial">
+							Trial
+						</div>
+						<div class="prop-price-description">
+							The first week only for
+						</div>
+						<div class="prop-price">
+							$0.99
+						</div>
+						<div class="prop-rebill">
+							Rebills at $8.99 per month after your trial is completed.
+						</div>
+						<button class="prop-to-purchase-but">
+							Get started
+						</button>
+					</div>
+
+					<div class="set-block-prop block-annual">
+						<div class="prop-limited-offer">
+							<div class="limited-offer-timer">
+							</div>
+						</div>
+						<img class="prop-trial-img" src="build/img/annual.svg" alt="trial">
+						<div class="prop-trial">
+							Annual Plan
+						</div>
+						<div class="prop-price">
+							$39.00
+							<span class="price-period">/ year</span>
+						</div>
+						<div class="prop-rebill">
+							Your Premium plan will auto-renew. Cancel any time.
+						</div>
+						<button class="prop-to-purchase-but">
+							Get started
+						</button>
+					</div>
+
+
+				</div>
+				<div class="offers-features">
+					<div class="promo-img-block">
+						<img class="block-img" src="build/img/strip.svg" alt="promo-strip">
+						<div class="block-text">★ BEST PRICE GUARANTEED ★</div>
+					</div>
+					<div class="promo-list">
+						<div class="list-headline">Your plan will include:</div>
+						<div class="list-item">Unlimited Cover Letters</div>
+						<div class="list-item">50+ custom templates</div>
+						<div class="list-item">Creative designs</div>
+						<div class="list-item">Custom backgrounds</div>
+						<div class="list-item">More than 15 color schemes</div>
+						<div class="list-item">Create multiple versions</div>
+						<div class="list-item">Custom sections</div>
+						<div class="list-item">Unlimited PDF downloads</div>
+						<div class="list-item">Emal sharing</div>
+					</div>
+				</div>
+			</div>
 		</div>
+		<div class="slick-slider">
+			<div class="slider-item">
+				<img class="slider-item-avatar" src="build/img/avatar-Debora.png" alt="avatar">
+				<div class="slider-item-review">
+					<div class="review-headline">
+						Deborah H.
+					</div>
+					<div class="review-text">“It is important to show your skills in a cover letter;
+						I think you have already heard it before”. Only in this case, you will have
+						an opportunity to prove your abilities in the interview. I decided to take
+						the help of qualified professionals. My skills were demonstrated in the right way.”
+					</div>
+				</div>
+			</div>
+			<div class="slider-item">
+				<img class="slider-item-avatar" src="build/img/avatar-Cooper.png" alt="avatar">
+				<div class="slider-item-review">
+					<div class="review-headline">
+						Cooper D.
+					</div>
+					<div class="review-text">
+						“I always love a wide selection of something, and the CL has satisfied my
+						needs in this case. Many variations of strengths and designs impressed me
+						and made me push the matter through. And I did not regret my choice when
+						the company sent me an offer for cooperation.”
+					</div>
+				</div>
+			</div>
+			<div class="slider-item">
+				<img class="slider-item-avatar" src="build/img/avatar-default.png" alt="avatar">
+				<div class="slider-item-review">
+					<div class="review-headline">
+						Smith J.
+					</div>
+					<div class="review-text">
+						“I always love a wide selection of something, and the CL has satisfied my
+						needs in this case. Many variations of strengths and designs impressed me
+						and made me push the matter through. And I did not regret my choice when
+						the company sent me an offer for cooperation.”
+					</div>
+				</div>
+			</div>
+			<div class="slider-item">
+				<img class="slider-item-avatar" src="build/img/avatar-default.png" alt="avatar">
+				<div class="slider-item-review">
+					<div class="review-headline">
+						Katrin A.
+					</div>
+					<div class="review-text">
+						“I always love a wide selection of something, and the CL has satisfied my
+						needs in this case. Many variations of strengths and designs impressed me
+						and made me push the matter through. And I did not regret my choice when
+						the company sent me an offer for cooperation.”
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer">
+
+			</div>
+		</footer>
 	</div>
-	
-	
 	<script src="build/js/script.js"></script>
 </body>
 </html>
