@@ -64,13 +64,12 @@
 						<button class="prop-to-purchase-but">
 							Get started
 						</button>
+						<button class="prop-to-offers-but">
+							Change
+						</button>
 					</div>
 
-					<div class="set-block-prop block-annual">
-						<div class="prop-limited-offer">
-							<div class="limited-offer-timer">
-							</div>
-						</div>
+					<div class="set-block-prop block-annual selected">
 						<img class="prop-trial-img" src="src/img/annual.svg" alt="trial">
 						<div class="prop-trial">
 							Annual Plan
@@ -85,8 +84,79 @@
 						<button class="prop-to-purchase-but">
 							Get started
 						</button>
+						<button class="prop-to-offers-but">
+							Change
+						</button>
 					</div>
 					<div class="offers-pay">
+						<img class="offers-pay-img" src="src/img/payment-methods.svg" alt="payment-methods">
+						<form class="pay-credit-card">
+							<div class="form-container">
+								<div class="field-container">
+									<label for="cardnumber">Card Number</label>
+									<input 
+									id="cardnumber"
+									type="text"
+									pattern="[0-9]*"
+									inputmode="numeric"
+									placeholder="Enter card number"
+									>
+								</div>
+								<div class="field-container">
+									<label for="expirationdateMonth">Exp. month</label>
+									<input
+									id="expirationdateMonth"
+									type="text"
+									pattern="[0-9]*"
+									inputmode="numeric"
+									placeholder="Month"
+									>
+									<div class="slash">
+										<img src="src/img/slash.png" alt="slash">
+									</div>
+								</div>
+								<div class="field-container">
+									<label for="expirationdateYear">Exp. year</label>
+									<input 
+									id="expirationdateYear"
+									type="text"
+									pattern="[0-9]*"
+									inputmode="numeric"
+									placeholder="Year"
+									>
+								</div>
+								<div class="field-container">
+									<label for="name">Cardholder First Name</label>
+									<input 
+									id="name"
+									maxlength="20"
+									type="text"
+									placeholder="Enter First Name"
+									>
+								</div>
+								<div class="field-container">
+									<label for="lastName">Cardholder Last Name</label>
+									<input 
+									id="lastName"
+									maxlength="20"
+									type="text"
+									placeholder="Enter Last Name"
+									>
+								</div>
+								<button class="form-container-but" type="submit">Confirm</button>
+								<div class="form-secure">
+									<img class="secure-img" src="src/img/safe.svg" alt="lock">
+									<div class="secure-text">
+										Secure credit card payment
+									</div>
+								</div>
+							</div>
+							<div class="card-description">
+								Your card will be automatically attached to your profile,
+								you can remove it at any time. By clicking “Confirm” you
+								agree to the<a href="#" class="description-terms">Terms & Conditions</a> 
+							</div>
+						</form>
 					</div>
 				</div>
 				<div class="offers-features">
