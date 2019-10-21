@@ -8,8 +8,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="src/libs/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="src/libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="src/libs/countdown/css/jquery.countdown.css"/>
 	<script src="src/libs/jquery-3.4.1.min.js"></script>
 	<script src="src/libs/slick/slick.min.js"></script>
+	<script src="src/libs/countdown/js/jquery.plugin.min.js"></script>
+	<script src="src/libs/countdown/js/jquery.countdown.min.js"></script>
 	<link rel="stylesheet" href="build/css/style.css">
 	<title>Payment test</title>
 </head>
@@ -40,7 +43,8 @@
 			</div>
 			<div class="block-offers">
 				<div class="offers-set">
-					<div class="set-block-prop block-trial selected">
+					<a id="toPay"></a>
+					<div class="set-block-prop block-trial">
 						<div class="prop-limited-offer">
 							<div class="limited-offer-headline">
 									LIMITED SUMMER OFFER
@@ -61,15 +65,20 @@
 						<div class="prop-rebill">
 							Rebills at $8.99 per month after your trial is completed.
 						</div>
-						<button class="prop-to-purchase-but">
+						<a href="#toPay" class="prop-to-purchase-but but-trial">
 							Get started
-						</button>
+						</a>
 						<button class="prop-to-offers-but">
 							Change
 						</button>
 					</div>
 
-					<div class="set-block-prop block-annual selected">
+					<div class="set-block-prop block-annual">
+						<div class="prop-limited-offer">
+							<div class="limited-offer-headline">
+									LIMITED SUMMER OFFER
+							</div>
+						</div>
 						<img class="prop-trial-img" src="src/img/annual.svg" alt="trial">
 						<div class="prop-trial">
 							Annual Plan
@@ -81,9 +90,9 @@
 						<div class="prop-rebill">
 							Your Premium plan will auto-renew. Cancel any time.
 						</div>
-						<button class="prop-to-purchase-but">
+						<a href="#toPay" class="prop-to-purchase-but but-annual">
 							Get started
-						</button>
+						</a>
 						<button class="prop-to-offers-but">
 							Change
 						</button>
@@ -102,7 +111,7 @@
 									placeholder="Enter card number"
 									>
 								</div>
-								<div class="field-container">
+								<div class="field-container month">
 									<label for="expirationdateMonth">Exp. month</label>
 									<input
 									id="expirationdateMonth"
